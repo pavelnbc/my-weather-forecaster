@@ -14,7 +14,7 @@ function WeatherDetails({ weatherData }) {
                         <td>Weather Description</td>
                         <td>
                             {weatherData.weather[0].description}
-                            <img src={`https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}/>
+                            <img src={`https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`} alt="weather-logo"/>
                         </td>
                     </tr>
                     <tr>
