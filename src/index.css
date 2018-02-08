@@ -227,6 +227,7 @@ body {
 
 .app .anchor:hover {
     border: 2px solid whitesmoke;
+    background-color: grey;
 }
 
 .app .anchor:hover .fa{
