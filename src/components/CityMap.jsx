@@ -6,7 +6,7 @@ import demoFancyMapStyles from 'react-google-maps/src/components/addons/demoFanc
 const CityMap = compose(
     withProps({
         isMarkerShown: true,
-        googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
+        googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyCQSrUHFPc5BwBB_1TozCmZ1H8UPrD_Jqk&v=3.exp&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `100%` }} />,
         containerElement: <div style={{ height: `400px` }} />,
         mapElement: <div style={{ height: `100%`, border: '1px solid lightgrey', borderRadius: '5px' }} />,
