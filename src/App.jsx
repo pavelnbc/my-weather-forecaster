@@ -1,0 +1,40 @@
+import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
+
+import Content from './components/Content'
+import Header from './components/Header';
+import LeftSideBarContainer from './containers/LeftSideBarContainer';
+import CityMapContainer from './containers/CityMapContainer';
+import WeatherDetailsContainer from './containers/WeatherDetailsContainer';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
+import Anchor from './components/Anchor';
+
+class App extends Component {
+    render() {
+        return (
+            <main className="app">
+                <Content>
+                    <Header/>
+                    <Grid>
+                        <Row className="show-grid">
+                            <Col xs={12} sm={4} md={4} lg={4}>
+                                <LeftSideBarContainer/>
+                            </Col>
+                            <Col xs={12} sm={8} md={8} lg={8}>
+                                <MainContent>
+                                    <CityMapContainer/>
+                                    <WeatherDetailsContainer/>
+                                </MainContent>
+                            </Col>
+                        </Row>
+                    </Grid>
+                    <Anchor/>
+                </Content>
+                <Footer/>
+            </main>
+        )
+    }
+}
+
+export default App
