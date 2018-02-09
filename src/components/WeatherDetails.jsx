@@ -40,7 +40,7 @@ function WeatherDetails({ weatherData }) {
                 </tbody>
             </table>
         </section>
-        : <p>Loading...</p>
+        : <img className="weather-details-loading" src="/img/loading.gif" alt="loading"/>
     )
 }
 

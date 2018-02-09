@@ -188,6 +188,11 @@ body {
     font-weight: normal;
 }
 
+.weather-details-loading {
+    display: block;
+    margin: 100px auto;
+}
+
 .footer {
     display: flex;
     justify-content: center;

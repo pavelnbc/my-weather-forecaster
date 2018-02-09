@@ -23,7 +23,7 @@ const CityMap = compose(
             >
                 {props.isMarkerShown && <Marker position={{ lat: +props.weatherData.coord.lat, lng: +props.weatherData.coord.lon }}/>}
             </GoogleMap>
-        : <p>Loading</p>
+        : null
     )
   }
 
