@@ -25,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    padding: 0 10px;
     font-family: Garamond;
     font-weight: bold;
     background-color: cyan;
@@ -32,15 +33,10 @@ body {
     box-sizing: border-box;
 }
 
-.app .header .project-description p {
-    font-size: 20px;
-}
-
 .app .header img {
     width: 100px;
     height: 100px;
     margin-right: 30px;
-    /*border: 1px solid;*/
 }
 
 .app .header .project-description {
@@ -49,6 +45,7 @@ body {
 
 .app .header .project-description p {
     font-size: 20px;
+    margin: 0;
 }
 
 .app .header .project-description h1 {
@@ -56,9 +53,6 @@ body {
     margin: 0 0 5px 0;
 }
 
-.app .header .project-description p {
-    margin: 0;
-}
 
 .app .left-side-bar, .app .left-side-bar input {
     font-size: 15px;
