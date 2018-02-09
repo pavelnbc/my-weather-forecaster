@@ -58,6 +58,7 @@ body {
     font-size: 15px;
     font-family: Garamond;
     color: darkcyan;
+    outline: none;
 }
 
 .app .left-side-bar form {

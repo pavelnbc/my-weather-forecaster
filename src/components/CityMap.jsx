@@ -19,7 +19,7 @@ const CityMap = compose(
         ? <GoogleMap
                 defaultZoom={9}
                 center={{ lat: +props.weatherData.coord.lat, lng: +props.weatherData.coord.lon }}
-                defaultOptions={{ styles: demoFancyMapStyles }}
+                defaultOptions={{ styles: demoFancyMapStyles, draggable: false }}
             >
                 {props.isMarkerShown && <Marker position={{ lat: +props.weatherData.coord.lat, lng: +props.weatherData.coord.lon }}/>}
             </GoogleMap>
