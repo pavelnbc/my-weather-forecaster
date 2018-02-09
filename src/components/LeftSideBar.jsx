@@ -52,7 +52,7 @@ class LeftSideBar extends Component {
                     <FormControl
                         type="text"
                         value={this.state.searchValue}
-                        placeholder="London, Paris, Rome"
+                        placeholder="London, Paris, Rome..."
                         inputRef={(input) => this.cityName = input}
                         onChange={this.handleChange}
                     />
