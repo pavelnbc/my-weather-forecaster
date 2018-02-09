@@ -47,11 +47,12 @@ class LeftSideBar extends Component {
             <aside className="left-side-bar">
                 <form onSubmit={this.handleSend}>
                     <ControlLabel>
-                        Please, put down your city name
+                        Please, put your city name
                     </ControlLabel>
                     <FormControl
                         type="text"
                         value={this.state.searchValue}
+                        placeholder="London, Paris, Rome"
                         inputRef={(input) => this.cityName = input}
                         onChange={this.handleChange}
                     />
