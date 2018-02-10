@@ -29,10 +29,10 @@ class LeftSideBar extends Component {
     }
 
     selectLastSearch(event) {
-        this.props.downloadWeather(event.target.innerHTML);
+        this.props.downloadWeather(event.target.closest('li').textContent);
 
         this.setState({
-            searchValue: event.target.innerHTML
+            searchValue: event.target.closest('li').textContent
         })
     }
 
@@ -64,7 +64,10 @@ class LeftSideBar extends Component {
                     <ListGroup onClick={this.selectLastSearch}>
                         { searchAttempts.length
                           ? searchAttempts.map((city, index) => {
-                                return <ListGroupItem key={index}>{city}</ListGroupItem>
+                                return <ListGroupItem key={index}>
+                                            <FontAwesome name="search"/>
+                                            <span>{city}</span>
+                                       </ListGroupItem>
                             })
                           : <p>Nothing yet</p>
                         }

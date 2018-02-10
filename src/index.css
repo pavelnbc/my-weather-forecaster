@@ -124,13 +124,17 @@ body {
 
 .app .left-side-bar .last-search {
     margin-bottom: 30px;
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
     color: darkcyan;
     border: 1px solid lightgrey;
     border-radius: 5px;
     background-color: lightcyan;
     box-sizing: border-box;
+}
+
+.app .left-side-bar .last-search .fa-search {
+    margin-right: 10px;
 }
 
 .app .left-side-bar .last-search p {
