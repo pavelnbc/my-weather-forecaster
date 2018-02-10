@@ -18,14 +18,15 @@ body {
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    width: 100vmax;
+    width: 100vw;
     /*min-width: 100vw;*/
-    height: 110vmin;
+    height: 2000px;
     /*min-height: 100vh;*/
     /*padding-top: 70px;*/
     font-family: Georgia;
-    font-size: 1em;
+    font-size: 1.3em;
     text-shadow: 1px 1px 1px grey;
+    taxt-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 1000;
     color: #5f4949;
