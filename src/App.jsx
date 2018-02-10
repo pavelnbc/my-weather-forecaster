@@ -4,7 +4,7 @@ import { Grid, Row, Col } from 'react-bootstrap'
 import LeftSideBarContainer from './containers/LeftSideBarContainer';
 import CityMapContainer from './containers/CityMapContainer';
 import WeatherDetailsContainer from './containers/WeatherDetailsContainer';
-import ErrorNortificationContainer from './containers/ErrorNortificationContainer';
+import ErrorNotificationContainer from './containers/ErrorNotificationContainer';
 import Content from './components/Content'
 import Header from './components/Header';
 import MainContent from './components/MainContent';
@@ -15,7 +15,7 @@ class App extends Component {
     render() {
         return (
             <main className="app">
-                <ErrorNortificationContainer/>
+                <ErrorNotificationContainer/>
                 <Content>
                     <Header/>
                     <Grid>
