@@ -24,7 +24,7 @@ body {
     font-family: Georgia;
     font-size: 1.3em;
     text-shadow: 1px 1px 1px grey;
-    background-color: rgba(255, 255, 255, 0.88);
+    background-color: rgba(255, 255, 255, 0.7);
     z-index: 1000;
     color: #5f4949;
 }
