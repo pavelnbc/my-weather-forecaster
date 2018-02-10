@@ -40,7 +40,17 @@ body {
 }
 
 .notification-is-hidden button {
+    background-color: #5f4949;
     margin-top: 15px;
+}
+
+.notification-is-hidden button:hover {
+    background-color: silver;
+    border: 1px solid lightcyan;
+}
+
+.notification-is-hidden button:active, .notification-is-hidden button:visited {
+    opacity: 0.5;
 }
 
 .notification-is-visible {
