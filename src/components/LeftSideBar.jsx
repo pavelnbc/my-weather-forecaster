@@ -56,7 +56,7 @@ class LeftSideBar extends Component {
                         inputRef={(input) => this.cityName = input}
                         onChange={this.handleChange}
                     />
-                    <FontAwesome name="send" onClick={this.handleSend}/>
+                    <FontAwesome name="search" onClick={this.handleSend}/>
                 </form>
 
                 <section className="last-search">
@@ -65,7 +65,7 @@ class LeftSideBar extends Component {
                         { searchAttempts.length
                           ? searchAttempts.map((city, index) => {
                                 return <ListGroupItem key={index}>
-                                            <FontAwesome name="search"/>
+                                            <FontAwesome name="map-marker"/>
                                             <span>{city}</span>
                                        </ListGroupItem>
                             })

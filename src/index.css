@@ -21,7 +21,7 @@ body {
     width: 100vmax;
     height: 2000px;
     font-family: Georgia;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     text-shadow: 1px 1px 1px grey;
     taxt-align: center;
     background-color: rgba(255, 255, 255, 0.7);
@@ -140,7 +140,7 @@ body {
     box-sizing: border-box;
 }
 
-.app .left-side-bar .last-search .fa-search {
+.app .left-side-bar .last-search .fa {
     margin-right: 10px;
 }
 
@@ -149,6 +149,7 @@ body {
 }
 
 .app .left-side-bar .last-search .list-group-item {
+    word-break: break-all;
     cursor: pointer
 }
 

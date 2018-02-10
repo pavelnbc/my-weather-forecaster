@@ -17,7 +17,7 @@ function ErrorNotification({ isError, closeNotification }) {
 
             <p>We are extremely sorry, but we couldn't find anything.</p>
 
-            <p>Possibly that happened because you've made a mistake typing your city name.</p>
+            <p>Possibly that happened because you've made a mistake, typing your city name.</p>
 
             <p>Please, try to repeat the procedure once again.</p>
 
