@@ -12,12 +12,38 @@ body {
     background-color: ghostwhite;
 }
 
+.notification-is-hidden {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 110vh;
+    padding-top: 70px;
+    font-family: Georgia;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px grey;
+    background-color: rgba(255, 255, 255, 0.88);
+    z-index: 1000;
+    color: #5f4949;
+}
+
+.notification-is-hidden img {
+    width: 150px;
+    height: 150px;
+}
+
+.notification-is-visible {
+    display: flex;
+}
+
 .app {
     min-width: 600px;
 }
 
 .app .content {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 80px);
 }
 
 .app .header {

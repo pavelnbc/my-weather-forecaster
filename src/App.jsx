@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap'
 
-import Content from './components/Content'
-import Header from './components/Header';
 import LeftSideBarContainer from './containers/LeftSideBarContainer';
 import CityMapContainer from './containers/CityMapContainer';
 import WeatherDetailsContainer from './containers/WeatherDetailsContainer';
+import ErrorNortificationContainer from './containers/ErrorNortificationContainer';
+import Content from './components/Content'
+import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import Anchor from './components/Anchor';
@@ -14,6 +15,7 @@ class App extends Component {
     render() {
         return (
             <main className="app">
+                <ErrorNortificationContainer/>
                 <Content>
                     <Header/>
                     <Grid>

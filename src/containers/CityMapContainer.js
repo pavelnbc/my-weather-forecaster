@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import CityMap from '../components/CityMap';
 
 function mapStateToProps(state) {
-    console.log(state);
     return {
         isMarkerShown: true,
         weatherData: state.weatherData

@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export const ADD_CITY = 'ADD_CITY';
 export const DOWNLOAD_WEATHER_DATA = 'DOWNLOAD_WEATHER_DATA';
+export const HANDLE_ERROR = 'HANDLE_ERROR';
 
 export function downloadWeatherData(cityName) {
     return (dispatch) => {
@@ -14,7 +15,22 @@ export function downloadWeatherData(cityName) {
             .then(() => {
                 dispatch({type: ADD_CITY, cityName})
             })
-            .catch((error) => console.log(error))
-    }
+            .catch((error) => {
+                console.log(error);
 
+                dispatch(handleError())
+            })
+    }
+}
+
+export function handleError() {
+    let bodyStyle = document.body.style;
+    let contentStyle = document.getElementById('content');
+
+    bodyStyle.overflow = bodyStyle.overflow === '' ? 'hidden' : '';
+    contentStyle.filter = contentStyle.filter === '' ? 'blur(1px)' : '';
+
+    return {
+        type: HANDLE_ERROR
+    }
 }
