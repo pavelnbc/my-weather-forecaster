@@ -27,7 +27,7 @@ export function handleError() {
     let bodyStyle = document.body.style;
     let contentStyle = document.getElementById('content').style;
 
-    // bodyStyle.overflow = bodyStyle.overflow === '' ? 'hidden' : '';
+    bodyStyle.overflow = bodyStyle.overflow === '' ? 'hidden' : '';
     contentStyle.filter = contentStyle.filter === '' ? 'blur(7px)' : '';
 
     return {
