@@ -13,7 +13,10 @@ export function downloadWeatherData(cityName) {
                 data
             }))
             .then(() => {
-                dispatch({type: ADD_CITY, cityName})
+                dispatch({
+                    type: ADD_CITY,
+                    cityName
+                })
             })
             .catch((error) => {
                 console.log(error);

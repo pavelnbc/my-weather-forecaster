@@ -8,7 +8,7 @@ function WeatherDetails({ weatherData }) {
                 <tbody>
                     <tr className="main-weather-info">
                         <th>Current <br/> Temperature</th>
-                        <th>{weatherData.main.temp.toFixed(0)}&deg;C</th>
+                        <th>{Math.floor(weatherData.main.temp)}&deg;C</th>
                     </tr>
                     <tr className="main-weather-info">
                         <td>Weather Description</td>
@@ -19,23 +19,23 @@ function WeatherDetails({ weatherData }) {
                     </tr>
                     <tr>
                         <td>Max. Temperature</td>
-                        <td>{weatherData.main.temp_max.toFixed(0)}&deg;C</td>
+                        <td>{Math.floor(weatherData.main.temp_max)}&deg;C</td>
                     </tr>
                     <tr>
                         <td>Min. Temperature</td>
-                        <td>{weatherData.main.temp_min.toFixed(0)}&deg;C</td>
+                        <td>{Math.floor(weatherData.main.temp_min)}&deg;C</td>
                     </tr>
                     <tr>
                         <td>Wind speed</td>
-                        <td>{weatherData.wind.speed.toFixed(0)} m/sec</td>
+                        <td>{Math.floor(weatherData.wind.speed)} m/sec</td>
                     </tr>
                     <tr>
                         <td>Humidity</td>
-                        <td>{weatherData.main.humidity.toFixed(0)}%</td>
+                        <td>{Math.floor(weatherData.main.humidity)}%</td>
                     </tr>
                     <tr>
                         <td>Cloudness</td>
-                        <td>{weatherData.clouds.all.toFixed(0)}%</td>
+                        <td>{Math.floor(weatherData.clouds.all)}%</td>
                     </tr>
                 </tbody>
             </table>
