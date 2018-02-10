@@ -18,13 +18,10 @@ body {
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    width: 100vmax;
-    /*min-width: 100vw;*/
+    width: 100vw;
     height: 2000px;
-    /*min-height: 100vh;*/
-    /*padding-top: 70px;*/
     font-family: Georgia;
-    font-size: 1.3em;
+    font-size: 1.5vw;
     text-shadow: 1px 1px 1px grey;
     taxt-align: center;
     background-color: rgba(255, 255, 255, 0.7);
@@ -32,9 +29,18 @@ body {
     color: #5f4949;
 }
 
+.notification-is-hidden h1 {
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
 .notification-is-hidden img {
     width: 150px;
     height: 150px;
+}
+
+.notification-is-hidden button {
+    margin-top: 15px;
 }
 
 .notification-is-visible {
