@@ -43,7 +43,7 @@ body {
 }
 
 .app .content {
-    min-height: calc(100vh - 30px);
+    min-height: calc(100vh - 50px);
 }
 
 .app .header {
