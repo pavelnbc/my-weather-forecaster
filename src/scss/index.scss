@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Garamond'), local('Garamond-Normal'),
+  url(https://allfont.ru/cache/fonts/garamond_e55d1f9ae6f0e84086f54bb6593f6a30.woff) format('woff'),
+  url(https://allfont.ru/cache/fonts/garamond_e55d1f9ae6f0e84086f54bb6593f6a30.ttf) format('truetype');
+}
+
+body {
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.app {
+  min-width: 500px;
+
+    .notification-is-hidden {             //  Error notification
+      display: none;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 2000px;
+      font-family: Georgia;
+      font-size: 1.3vw;
+      text-shadow: 1px 1px 1px grey;
+      taxt-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 1000;
+      color: #5f4949;
+
+      h1 {
+        font-size: 3vw;
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+      }
+
+      button {
+        background-color: #5f4949;
+        margin-top: 15px;
+        outline: none;
+      }
+
+      button:hover {
+        background-color: silver;
+        border: 1px solid white;
+        outline: none;
+      }
+
+      button:focus {
+        @extend button:hover
+      }
+
+      button:active {
+        @extend button:hover;
+        opacity: 0.5;
+      }
+    }
+
+    .notification-is-visible {
+      display: flex;
+    }
+
+    .content {
+      min-height: calc(100vh - 50px);
+    }
+
+    .header {                         // Header
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 0 20px;
+      font-family: Garamond;
+      font-weight: bold;
+      background-color: cyan;
+      border-bottom: 1px solid darkgray;
+      box-sizing: border-box;
+    }
+
+    .header {
+        img {
+          width: 100px;
+          height: 100px;
+          margin-right: 30px;
+        }
+
+        .project-description {
+          text-align: center;
+        }
+
+        .project-description {
+            p {
+              font-size: 20px;
+              margin: 0;
+            }
+
+            h1 {
+              font-weight: bold;
+              margin: 0 0 5px 0;
+            }
+        }
+    }
+
+    .left-side-bar {                            // LeftSide bar
+      font-size: 15px;
+      font-family: Garamond;
+      color: darkcyan;
+      outline: none;
+
+        input {
+          font-size: 15px;
+          font-family: Garamond;
+          color: darkcyan;
+          outline: none;
+        }
+
+        form {
+          position: relative;
+          margin-bottom: 30px;
+          padding: 15px;
+          border: 1px solid lightgrey;
+          border-radius: 5px;
+          background-color: cyan;
+          box-sizing: border-box;
+          color: darkcyan;
+
+            .fa {
+              position: absolute;
+              right: 27px;
+              bottom: 25px;
+              font-size: 14px;
+              cursor: pointer;
+            }
+
+            .fa:active {
+              opacity: 0.5;
+            }
+        }
+
+        label {
+          margin-left: 5px;
+          font-size: 15px;
+          color: darkslategrey;
+        }
+
+        .last-search {
+          margin-bottom: 30px;
+          padding: 10px 15px 15px;
+          font-size: 15px;
+          color: darkcyan;
+          border: 1px solid lightgrey;
+          border-radius: 5px;
+          background-color: cyan;
+          box-sizing: border-box;
+
+            .fa {
+              margin-right: 10px;
+            }
+
+            p {
+              text-align: center;
+            }
+
+            .list-group {
+              margin: 0;
+            }
+
+            .list-group-item {
+              padding: 7px 10px;
+              word-break: break-all;
+              cursor: pointer;
+            }
+
+            .list-group-item:hover {
+              color: darkslategray;
+              background-color: lightcyan;
+            }
+        }
+    }
+
+    .main-content {                                 // Main content   (Right side)
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .map-field {
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+    }
+
+    .weather-details-field {
+      width: 100%;
+      padding: 20px 20px 40px 20px;
+      margin-top: 20px;
+      color: darkslategrey;
+      background-color: cyan;
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+
+        table {
+          width: 100%;
+
+            tr {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 5px;
+              padding: 5px 10px;
+              font-size: 17px;
+              font-family: Garamond;
+              border-bottom: 1px solid grey;
+            }
+
+            th:nth-child(2) {
+              font-size: 2.5em;
+              font-weight: normal;
+            }
+        }
+
+        .main-weather-info {
+          th {
+            font-size: 30px;
+          }
+
+          img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+
+        .main-weather-info:nth-child(1) {
+          border: 0;
+          margin-bottom: 0;
+        }
+
+        .main-weather-info:nth-child(2) {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 0;
+          margin-bottom: 70px;
+          border: 0;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .weather-details-loading {
+          display: block;
+          margin: 100px auto;
+        }
+    }
+
+    .footer {                                       // Footer
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      font-family: Georgia serif;
+      border-top: 1px solid lightgrey;
+      background-color: #d2eaea;
+      color: darkslategrey;
+    }
+
+    .anchor {                                     // Anchor
+      position: fixed;
+      left: 50px;
+      bottom: 100px;
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+      border: 2px solid grey;
+      border-radius: 50%;
+      background-color: lightgrey;
+      text-align: center;
+      cursor: pointer;
+
+        .fa {
+          display: block;
+          font-size: 30px;
+          margin-top: 5px;
+          color: grey;
+          font-weight: normal;
+        }
+    }
+
+    .anchor:hover {
+     border: 2px solid whitesmoke;
+     background-color: grey;
+
+        .fa{
+          color: whitesmoke;
+        }
+    }
+}
