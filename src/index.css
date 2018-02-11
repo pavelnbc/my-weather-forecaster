@@ -176,8 +176,9 @@ body {
 }
 
 .app .left-side-bar .last-search .list-group-item {
-    padding-top: 7px;
-    padding-bottom: 7px;
+/*    padding-top: 7px;
+    padding-bottom: 7px;*/
+    padding: 7px 10px;
     word-break: break-all;
     cursor: pointer;
 }
