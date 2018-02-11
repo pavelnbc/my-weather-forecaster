@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function WeatherDetails({ weatherData }) {
     return (
@@ -43,5 +44,9 @@ function WeatherDetails({ weatherData }) {
         : <img className="weather-details-loading" src="/img/loading.gif" alt="loading"/>
     )
 }
+
+WeatherDetails.propTypes = {
+    weatherData: PropTypes.object
+};
 
 export default WeatherDetails

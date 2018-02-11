@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { compose, withProps } from "recompose";
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 import demoFancyMapStyles from 'react-google-maps/src/components/addons/demoFancyMapStyles.json';
@@ -26,8 +27,12 @@ const CityMap = compose(
         : null
     )
   }
-
 );
+
+CityMap.propTypes = {
+    weatherData: PropTypes.object,
+    isMarkerShown: PropTypes.bool
+};
 
 export default CityMap
 

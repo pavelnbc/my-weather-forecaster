@@ -53,7 +53,6 @@ class LeftSideBar extends Component {
                         type="text"
                         value={this.state.searchValue}
                         placeholder="London, Paris, Rome..."
-                        inputRef={(input) => this.cityName = input}
                         onChange={this.handleChange}
                     />
                     <FontAwesome name="search" onClick={this.handleSend}/>
@@ -78,15 +77,9 @@ class LeftSideBar extends Component {
     }
 }
 
-/*<ListGroupItem>London</ListGroupItem>
-                        <ListGroupItem>Moscow</ListGroupItem>
-                        <ListGroupItem>Paris</ListGroupItem>
-                        <ListGroupItem>Budapest</ListGroupItem>
-                        <ListGroupItem>Madrid</ListGroupItem>*/
-
-
 LeftSideBar.propTypes = {
-   downloadWeather: PropTypes.func
+   downloadWeather: PropTypes.func,
+   searchAttempts: PropTypes.array
 };
 
 export default LeftSideBar

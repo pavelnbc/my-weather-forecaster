@@ -42,15 +42,26 @@ body {
 .notification-is-hidden button {
     background-color: #5f4949;
     margin-top: 15px;
+    outline: none;
 }
 
 .notification-is-hidden button:hover {
     background-color: silver;
-    border: 1px solid lightcyan;
+    border: 1px solid white;
+    outline: none;
 }
 
-.notification-is-hidden button:active, .notification-is-hidden button:visited {
+.notification-is-hidden button:active {
     opacity: 0.5;
+    background-color: silver !important;
+    border: 1px solid white !important;
+    outline: none;
+}
+
+.notification-is-hidden button:focus {
+    background-color: silver !important;
+    border: 1px solid white !important;
+    outline: none;
 }
 
 .notification-is-visible {
