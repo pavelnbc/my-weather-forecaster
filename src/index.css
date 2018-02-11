@@ -17,7 +17,9 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100vw;
     height: 2000px;
     font-family: Georgia;
