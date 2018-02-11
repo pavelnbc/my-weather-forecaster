@@ -46,11 +46,12 @@ class LeftSideBar extends Component {
         return(
             <aside className="left-side-bar">
                 <form onSubmit={this.handleSend}>
-                    <ControlLabel>
+                    <ControlLabel htmlFor="input">
                         Please, put your city name
                     </ControlLabel>
                     <FormControl
                         type="text"
+                        id="input"
                         value={this.state.searchValue}
                         placeholder="London, Paris, Rome..."
                         onChange={this.handleChange}
@@ -59,7 +60,7 @@ class LeftSideBar extends Component {
                 </form>
 
                 <section className="last-search">
-                    <h5>Last time you searched...</h5>
+                    <ControlLabel>Last time you searched...</ControlLabel>
                     <ListGroup onClick={this.selectLastSearch}>
                         { searchAttempts.length
                           ? searchAttempts.map((city, index) => {
@@ -77,9 +78,15 @@ class LeftSideBar extends Component {
     }
 }
 
+/*<ListGroupItem>London</ListGroupItem>
+                        <ListGroupItem>Moscow</ListGroupItem>
+                        <ListGroupItem>Paris</ListGroupItem>
+                        <ListGroupItem>Budapest</ListGroupItem>
+                        <ListGroupItem>Madrid</ListGroupItem>*/
+
+
 LeftSideBar.propTypes = {
-   downloadWeather: PropTypes.func,
-   searchAttempts: PropTypes.array
+   downloadWeather: PropTypes.func
 };
 
 export default LeftSideBar
