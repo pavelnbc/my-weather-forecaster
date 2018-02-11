@@ -261,6 +261,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 50px;
+    font-family: Georgia serif;
     border-top: 1px solid lightgrey;
     background-color: lightcyan;
     color: grey;
