@@ -149,6 +149,7 @@ body {
 .app .left-side-bar label {
     margin-left: 5px;
     font-size: 15px;
+    color: darkslategrey;
 }
 
 .app .left-side-bar .last-search {
@@ -183,7 +184,7 @@ body {
 
 .app .left-side-bar .last-search .list-group-item:hover {
     color: darkslategray;
-    background-color: cyan;
+    background-color: lightcyan;
 }
 
 .app .main-content {
@@ -203,7 +204,7 @@ body {
     width: 100%;
     padding: 20px 20px 40px 20px;
     margin-top: 20px;
-    color: darkcyan;
+    color: darkslategrey;
     background-color: cyan;
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -267,7 +268,7 @@ body {
     font-family: Georgia serif;
     border-top: 1px solid lightgrey;
     background-color: #d2eaea;
-    color: grey;
+    color: darkslategrey;
 }
 
 .app .anchor {
