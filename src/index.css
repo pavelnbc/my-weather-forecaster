@@ -222,7 +222,7 @@ body {
     padding: 5px 10px;
     font-size: 17px;
     font-family: Garamond;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid grey;
 }
 
 .app .main-content .weather-details-field .main-weather-info:nth-child(1) {
