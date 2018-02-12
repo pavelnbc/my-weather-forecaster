@@ -1,3 +1,5 @@
+//sass --watch src/scss:src/css
+
 @font-face {
   font-family: 'Garamond';
   font-style: normal;
@@ -191,26 +193,26 @@ body {
       margin-bottom: 30px;
       border-radius: 5px;
       box-sizing: border-box;
-    }
 
-    .map-field {
-      width: 100%;
-      margin-bottom: 20px;
-      border: 1px solid lightgrey;
-      border-radius: 5px;
-    }
 
-    .weather-details-field {
-      width: 100%;
-      padding: 20px 20px 40px 20px;
-      margin-top: 20px;
-      color: darkslategrey;
-      background-color: cyan;
-      border: 1px solid lightgrey;
-      border-radius: 5px;
-
-        table {
+        .map-field {
           width: 100%;
+          margin-bottom: 20px;
+          border: 1px solid lightgrey;
+          border-radius: 5px;
+        }
+
+        .weather-details-field {
+          width: 100%;
+          padding: 20px 20px 40px 20px;
+          margin-top: 20px;
+          color: darkslategrey;
+          background-color: cyan;
+          border: 1px solid lightgrey;
+          border-radius: 5px;
+
+          table {
+            width: 100%;
 
             tr {
               display: flex;
@@ -227,37 +229,73 @@ body {
               font-size: 2.5em;
               font-weight: normal;
             }
-        }
-
-        .main-weather-info {
-          th {
-            font-size: 30px;
           }
 
-          img {
-            width: 70px;
-            height: 70px;
+          .main-weather-info {
+            th {
+              font-size: 30px;
+            }
+
+            img {
+              width: 70px;
+              height: 70px;
+            }
+          }
+
+          .main-weather-info:nth-child(1) {
+            border: 0;
+            margin-bottom: 0;
+          }
+
+          .main-weather-info:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0;
+            margin-bottom: 70px;
+            border: 0;
+            font-size: 20px;
+            font-weight: bold;
+          }
+
+          .weather-details-loading {
+            display: block;
+            margin: 100px auto;
           }
         }
 
-        .main-weather-info:nth-child(1) {
-          border: 0;
-          margin-bottom: 0;
-        }
-
-        .main-weather-info:nth-child(2) {
+        .weather-forecast-field {
           display: flex;
           justify-content: space-between;
-          margin-top: 0;
-          margin-bottom: 70px;
-          border: 0;
-          font-size: 20px;
-          font-weight: bold;
-        }
+          flex-wrap: wrap;
+          padding:0;
 
-        .weather-details-loading {
-          display: block;
-          margin: 100px auto;
+              .forecast {
+                list-style: none;
+                flex-grow: 1;
+                text-align: center;
+                height: 150px;
+                margin-top: 20px;
+                margin-right: 20px;
+                border: 1px solid lightgrey;
+                border-radius: 5px;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Garamond, Arial;
+                background-color: lightcyan;
+
+                    span {
+                      margin-right: 20px;
+                    }
+
+                    img {
+                      width: 80px;
+                      height: 80px;
+                    }
+              }
+
+              .forecast:nth-child(3) {
+                margin-right: 0;
+              }
         }
     }
 

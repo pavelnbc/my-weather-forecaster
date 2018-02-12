@@ -4,6 +4,7 @@ import { Grid, Row, Col } from 'react-bootstrap'
 import LeftSideBarContainer from './containers/LeftSideBarContainer';
 import CityMapContainer from './containers/CityMapContainer';
 import WeatherDetailsContainer from './containers/WeatherDetailsContainer';
+import WeatherForecastContainer from './containers/WeatherForecastContainer';
 import ErrorNotificationContainer from './containers/ErrorNotificationContainer';
 import Content from './components/Content'
 import Header from './components/Header';
@@ -27,6 +28,7 @@ class App extends Component {
                                 <MainContent>
                                     <CityMapContainer/>
                                     <WeatherDetailsContainer/>
+                                    <WeatherForecastContainer/>
                                 </MainContent>
                             </Col>
                         </Row>

@@ -126,52 +126,77 @@ body {
     margin-bottom: 30px;
     border-radius: 5px;
     box-sizing: border-box; }
-  .app .map-field {
-    width: 100%;
-    margin-bottom: 20px;
-    border: 1px solid lightgrey;
-    border-radius: 5px; }
-  .app .weather-details-field {
-    width: 100%;
-    padding: 20px 20px 40px 20px;
-    margin-top: 20px;
-    color: darkslategrey;
-    background-color: cyan;
-    border: 1px solid lightgrey;
-    border-radius: 5px; }
-    .app .weather-details-field table {
-      width: 100%; }
-      .app .weather-details-field table tr {
+    .app .main-content .map-field {
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid lightgrey;
+      border-radius: 5px; }
+    .app .main-content .weather-details-field {
+      width: 100%;
+      padding: 20px 20px 40px 20px;
+      margin-top: 20px;
+      color: darkslategrey;
+      background-color: cyan;
+      border: 1px solid lightgrey;
+      border-radius: 5px; }
+      .app .main-content .weather-details-field table {
+        width: 100%; }
+        .app .main-content .weather-details-field table tr {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 5px;
+          padding: 5px 10px;
+          font-size: 17px;
+          font-family: Garamond;
+          border-bottom: 1px solid grey; }
+        .app .main-content .weather-details-field table th:nth-child(2) {
+          font-size: 2.5em;
+          font-weight: normal; }
+      .app .main-content .weather-details-field .main-weather-info th {
+        font-size: 30px; }
+      .app .main-content .weather-details-field .main-weather-info img {
+        width: 70px;
+        height: 70px; }
+      .app .main-content .weather-details-field .main-weather-info:nth-child(1) {
+        border: 0;
+        margin-bottom: 0; }
+      .app .main-content .weather-details-field .main-weather-info:nth-child(2) {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-bottom: 5px;
-        padding: 5px 10px;
-        font-size: 17px;
-        font-family: Garamond;
-        border-bottom: 1px solid grey; }
-      .app .weather-details-field table th:nth-child(2) {
-        font-size: 2.5em;
-        font-weight: normal; }
-    .app .weather-details-field .main-weather-info th {
-      font-size: 30px; }
-    .app .weather-details-field .main-weather-info img {
-      width: 70px;
-      height: 70px; }
-    .app .weather-details-field .main-weather-info:nth-child(1) {
-      border: 0;
-      margin-bottom: 0; }
-    .app .weather-details-field .main-weather-info:nth-child(2) {
+        margin-top: 0;
+        margin-bottom: 70px;
+        border: 0;
+        font-size: 20px;
+        font-weight: bold; }
+      .app .main-content .weather-details-field .weather-details-loading {
+        display: block;
+        margin: 100px auto; }
+    .app .main-content .weather-forecast-field {
       display: flex;
       justify-content: space-between;
-      margin-top: 0;
-      margin-bottom: 70px;
-      border: 0;
-      font-size: 20px;
-      font-weight: bold; }
-    .app .weather-details-field .weather-details-loading {
-      display: block;
-      margin: 100px auto; }
+      flex-wrap: wrap;
+      padding: 0; }
+      .app .main-content .weather-forecast-field .forecast {
+        list-style: none;
+        flex-grow: 1;
+        text-align: center;
+        height: 150px;
+        margin-top: 20px;
+        margin-right: 20px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Garamond, Arial;
+        background-color: lightcyan; }
+        .app .main-content .weather-forecast-field .forecast span {
+          margin-right: 20px; }
+        .app .main-content .weather-forecast-field .forecast img {
+          width: 80px;
+          height: 80px; }
+      .app .main-content .weather-forecast-field .forecast:nth-child(3) {
+        margin-right: 0; }
   .app .footer {
     display: flex;
     justify-content: center;
