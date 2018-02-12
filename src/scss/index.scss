@@ -267,15 +267,17 @@ body {
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
-          padding:0;
+          padding: 0;
 
               .forecast {
                 list-style: none;
                 flex-grow: 1;
                 text-align: center;
                 height: 150px;
+                margin-left: 10px;
+                margin-right: 10px;
                 margin-top: 20px;
-                margin-right: 20px;
+                padding-top: 15px;
                 border: 1px solid lightgrey;
                 border-radius: 5px;
                 font-size: 30px;
@@ -283,19 +285,19 @@ body {
                 font-family: Garamond, Arial;
                 background-color: lightcyan;
 
-                    span {
-                      margin-right: 20px;
-                    }
-
                     img {
                       width: 80px;
                       height: 80px;
                     }
               }
 
-              .forecast:nth-child(3) {
-                margin-right: 0;
-              }
+//              .forecast:first-child {
+//                margin-left: 0;
+//              }
+//
+///*              .forecast:last-child {
+//                margin-left: 0;
+//              }*/
         }
     }
 

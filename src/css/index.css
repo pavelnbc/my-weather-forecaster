@@ -182,21 +182,19 @@ body {
         flex-grow: 1;
         text-align: center;
         height: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
         margin-top: 20px;
-        margin-right: 20px;
+        padding-top: 15px;
         border: 1px solid lightgrey;
         border-radius: 5px;
         font-size: 30px;
         font-weight: bold;
         font-family: Garamond, Arial;
         background-color: lightcyan; }
-        .app .main-content .weather-forecast-field .forecast span {
-          margin-right: 20px; }
         .app .main-content .weather-forecast-field .forecast img {
           width: 80px;
           height: 80px; }
-      .app .main-content .weather-forecast-field .forecast:nth-child(3) {
-        margin-right: 0; }
   .app .footer {
     display: flex;
     justify-content: center;
