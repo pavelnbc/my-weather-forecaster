@@ -9,7 +9,11 @@ function DailyForecast({ day, tMin, tMax, icon }) {
         <li className="forecast">
             <h3>{week[date.getDay()]}</h3>
             <div>
-                <span>{Math.floor(tMin)}</span><span>{Math.floor(tMax)}</span><span><img src={`https://openweathermap.org/img/w/${icon}.png`} alt=""/></span>
+                <span>{Math.floor(tMin)}</span>
+                <span>{Math.floor(tMax)}</span>
+                <span>
+                    <img src={`https://openweathermap.org/img/w/${icon}.png`} alt=""/>
+                </span>
             </div>
         </li>
     )

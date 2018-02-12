@@ -185,16 +185,18 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 20px;
-        padding-top: 15px;
+        padding: 15px 5px;
         border: 1px solid lightgrey;
         border-radius: 5px;
-        font-size: 30px;
+        font-size: 3vw;
         font-weight: bold;
         font-family: Garamond, Arial;
         background-color: lightcyan; }
         .app .main-content .weather-forecast-field .forecast img {
           width: 80px;
           height: 80px; }
+        .app .main-content .weather-forecast-field .forecast div span:first-child {
+          margin-right: 15px; }
   .app .footer {
     display: flex;
     justify-content: center;
