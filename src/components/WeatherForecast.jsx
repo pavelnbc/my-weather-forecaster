@@ -10,7 +10,7 @@ function WeatherForecast({ forecastDetails }) {
         ? <ul className="weather-forecast-field">
            <DailyForecast item='8' forecast={forecastDetails}/>
             <DailyForecast item='16' forecast={forecastDetails}/>
-            <DailyForecast item='16' forecast={forecastDetails}/>
+            <DailyForecast item='24' forecast={forecastDetails}/>
         </ul>
         : null
     )
