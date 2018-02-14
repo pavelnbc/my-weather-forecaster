@@ -1,12 +1,18 @@
 import React from 'react';
 
-function DailyForecast({ item, forecast }) {
+function DailyForecast({ item, forecastDetails }) {
     let week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-    let date = new Date(forecast.list[item].dt * 1000).getDay();
-    let minTemp = Math.floor(forecast.list[item].main.temp_min) <= 0 ? Math.floor(forecast.list[item].main.temp_min) : `+${Math.floor(forecast.list[item].main.temp_min)}`;
-    let maxTemp = Math.floor(forecast.list[item].main.temp_max) <= 0 ? Math.floor(forecast.list[item].main.temp_max) : `+${Math.floor(forecast.list[item].main.temp_max)}`;
-    let iconSrc = `https://openweathermap.org/img/w/${forecast.list[item].weather[0].icon}.png`;
+    let date = new Date(forecastDetails.list[item].dt * 1000).getDay();
+    let minTemp = Math.floor(forecastDetails.list[item].main.temp_min) <= 0
+            ? Math.floor(forecastDetails.list[item].main.temp_min)
+            : `+${Math.floor(forecastDetails.list[item].main.temp_min)}`;
+    let maxTemp = Math.floor(forecastDetails.list[item].main.temp_max) <= 0
+            ? Math.floor(forecastDetails.list[item].main.temp_max)
+            : `+${Math.floor(forecastDetails.list[item].main.temp_max)}`;
+    let iconSrc = `https://openweathermap.org/img/w/${
+        forecastDetails.list[item].weather[0].icon
+        }.png`;
 
     return (
         <li className="forecast">

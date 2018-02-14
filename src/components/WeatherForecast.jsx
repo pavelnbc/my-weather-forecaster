@@ -2,15 +2,13 @@ import React from 'react';
 
 import DailyForecast from './DailyForecast';
 
-function WeatherForecast({ forecastDetails }) {
-    console.log(forecastDetails);
-
+function WeatherForecast(props) {                   // props = {forecastDetails}
     return (
-        forecastDetails.list
+        props.forecastDetails.list
         ? <ul className="weather-forecast-field">
-           <DailyForecast item='8' forecast={forecastDetails}/>
-            <DailyForecast item='16' forecast={forecastDetails}/>
-            <DailyForecast item='24' forecast={forecastDetails}/>
+           <DailyForecast item='8' {...props}/>
+            <DailyForecast item='16' {...props}/>
+            <DailyForecast item='24' {...props}/>
         </ul>
         : null
     )

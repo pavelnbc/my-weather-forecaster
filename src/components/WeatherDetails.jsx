@@ -4,15 +4,23 @@ import PropTypes from 'prop-types';
 function WeatherDetails({ weatherData }) {
     let curTemp, maxTemp, minTemp, wethDescr, windSpeed, humidity, cloudiness, iconSrc;
 
-    if(weatherData.main) {
-        curTemp = Math.floor(weatherData.main.temp) <= 0 ? Math.floor(weatherData.main.temp) : `+${Math.floor(weatherData.main.temp)}`;
-        maxTemp = Math.floor(weatherData.main.temp_max) <= 0 ? Math.floor(weatherData.main.temp_max) : `+${Math.floor(weatherData.main.temp_max)}`;
-        minTemp = Math.floor(weatherData.main.temp_min) <= 0 ? Math.floor(weatherData.main.temp_min) : `+${Math.floor(weatherData.main.temp_min)}`;
+    if (weatherData.main) {
+        curTemp = Math.floor(weatherData.main.temp) <= 0
+                ? Math.floor(weatherData.main.temp)
+                : `+${Math.floor(weatherData.main.temp)}`;
+        maxTemp = Math.floor(weatherData.main.temp_max) <= 0
+                ? Math.floor(weatherData.main.temp_max)
+                : `+${Math.floor(weatherData.main.temp_max)}`;
+        minTemp = Math.floor(weatherData.main.temp_min) <= 0
+                ? Math.floor(weatherData.main.temp_min)
+                : `+${Math.floor(weatherData.main.temp_min)}`;
         wethDescr = weatherData.weather[0].description;
         windSpeed = Math.floor(weatherData.wind.speed);
         humidity = Math.floor(weatherData.main.humidity);
         cloudiness = Math.floor(weatherData.clouds.all);
-        iconSrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+        iconSrc = `https://openweathermap.org/img/w/${
+            weatherData.weather[0].icon
+            }.png`;
     }
 
     return (
