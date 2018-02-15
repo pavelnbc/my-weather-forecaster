@@ -122,6 +122,8 @@ body {
       .app .left-side-bar .last-search .list-group-item:hover {
         color: darkslategray;
         background-color: lightcyan; }
+      .app .left-side-bar .last-search .list-group-item:focus {
+        outline: none; }
   .app .main-content {
     margin-bottom: 30px;
     border-radius: 5px;
