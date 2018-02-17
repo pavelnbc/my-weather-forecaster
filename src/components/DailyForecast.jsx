@@ -19,6 +19,7 @@ function DailyForecast({ item, forecastDetails }) {
             <h3>{week[date]}</h3>
             <div>
                 <span>{minTemp}</span>
+                <span>...</span>
                 <span>{maxTemp}</span>
                 <span>
                     <img src={iconSrc} alt="weatherIcon"/>

@@ -15,6 +15,6 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-const LeftSideBarContainer = connect(mapStateToProps, mapDispatchToProps)(LeftSideBar);
+const LeftSideBarContainer  = connect(mapStateToProps, mapDispatchToProps)(LeftSideBar);
 
 export default LeftSideBarContainer

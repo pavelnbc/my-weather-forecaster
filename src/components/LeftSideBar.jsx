@@ -62,7 +62,7 @@ class LeftSideBar extends Component {
 
                 <section className="last-search">
                     <ControlLabel>Last time you searched...</ControlLabel>
-                    <ListGroup >
+                    <ListGroup>
                         { searchAttempts.length
                           ? searchAttempts.map((city, index) => {
                                 return <ListGroupItem key={index} onClick={this.selectLastSearch}>
