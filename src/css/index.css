@@ -197,7 +197,7 @@ body {
         .app .main-content .weather-forecast-field .forecast img {
           width: 80px;
           height: 80px; }
-        .app .main-content .weather-forecast-field .forecast div span:nth-child(2) {
+        .app .main-content .weather-forecast-field .forecast span:nth-child(3) {
           margin: 0 3px; }
   .app .footer {
     display: flex;
