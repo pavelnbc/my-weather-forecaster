@@ -28,7 +28,6 @@ class App extends Component {
                                 <MainContent>
                                     <CityMapContainer/>
                                     <WeatherDetailsContainer/>
-<!--                                     <WeatherForecastContainer/> -->
                                 </MainContent>
                             </Col>
                         </Row>
